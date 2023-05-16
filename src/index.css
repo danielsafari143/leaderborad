@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fauna+One&family=Lato&family=Montserrat:wght@600&family=Poppins:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-weight: 600;
+  font-family: 'Cinzel', serif;
+  font-family: 'Fauna One', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.leaderboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  gap: 10px;
+  width: 60vw;
+  padding: 40px;
+}
+
+.inputScores {
+  width: 27vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputScores input {
+  padding: 10px;
+  width: auto;
+  border: 2px solid black;
+}
+
+#button {
+  align-self: flex-end;
+  width: 80px;
+  margin-right: 93px;
+  padding: 4px;
+}
+
+.recent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+ul > li:nth-child(2n+2) a {
+  background-color: #7d008d;
+}
+
+ul {
+  padding-top: 10px;
+}
+
+ul > li:nth-child(3n+2) a {
+  background-color: #96e8e5;
+}

@@ -13,11 +13,11 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top:80px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .leaderboard {
@@ -54,28 +54,28 @@ body {
 }
 
 .recent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 li {
-    list-style: none;
-    display:flex;
-    flex-direction: row;
-    gap: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 ul > li:nth-child(2n+2) a {
-    background-color: #7d008d;
+  background-color: #7d008d;
 }
 
 ul {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 ul > li:nth-child(3n+2) a {
-    background-color: #96E8E5;
+  background-color: #96e8e5;
 }

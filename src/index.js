@@ -4,12 +4,14 @@ import update from './modules/refresh.js';
 import addScore from './modules/addScore.js';
 
 document.getElementById('refresh').addEventListener('click', () => {
-  update(getScore('WCFRPqcmVfA3nAltLwE7'));
+  update(getScore('dQZsUfY52oMRq1GpRMfQ'));
 });
 
 document.getElementById('button').addEventListener('click', async () => {
-  const user = document.getElementById('user').value;
-  const score = document.getElementById('score').value;
-  const values = (await addScore('WCFRPqcmVfA3nAltLwE7', user, score));
+  const user = document.getElementById('user');
+  const score = document.getElementById('score');
+  const values = (await addScore('dQZsUfY52oMRq1GpRMfQ', user.value, score.value));
   document.getElementById('check').innerHTML = values.result;
+  user.value = '';
+  score.value = '';
 });

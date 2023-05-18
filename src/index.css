@@ -18,6 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 80px;
+  padding-bottom: 20px;
+  color: #fc5406;
 }
 
 .leaderboard {
@@ -43,14 +45,19 @@ body {
 .inputScores input {
   padding: 10px;
   width: auto;
-  border: 2px solid black;
+  border: 2px solid rgb(243, 210, 22);
+  color: #fc5406;
 }
 
-#button {
+#button,
+#refresh {
   align-self: flex-end;
   width: 80px;
   margin-right: 93px;
   padding: 4px;
+  background-color: rgb(243, 210, 22);
+  border: 1px solid rgb(243, 210, 22);
+  color: #fc5406;
 }
 
 .recent {
@@ -61,21 +68,37 @@ body {
   gap: 10px;
 }
 
-li {
-  list-style: none;
+.liste {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  padding: 10px 30px 10px 20px;
 }
 
-ul > li:nth-child(2n+2) a {
-  background-color: #7d008d;
+#listScore {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-ul {
-  padding-top: 10px;
+table {
+  margin-top: 10px;
 }
 
-ul > li:nth-child(3n+2) a {
-  background-color: #96e8e5;
+#listScore td,
+#listScore th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#listScore tr:nth-child(even) { background-color: #f2f2f2; }
+
+#listScore tr:hover { background-color: #ddd; }
+
+#listScore th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fcae06;
+  color: white;
 }

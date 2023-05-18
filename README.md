@@ -60,6 +60,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Project Structure]**
+- **[Consume the api]**
 
 <!-- GETTING STARTED -->
 
